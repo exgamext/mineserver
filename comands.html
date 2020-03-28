@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>XGen Server</title>
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="Semantic/semantic.css">
+</head>
+<body>
+    <!-- Menu -->
+    <div class="ui blue inverted top fixed menu">
+        <div class="item">
+          <img src="images/logo.png">
+        </div>
+        <a class="item" href="index.html"><i class="icon home"></i>Início</a>
+        <a class="item"><i class="icon diamond"></i>Seja VIP<div class="ui olive label"><i class="icon calendar alternate"></i>30d EXTRA</div></a>
+        <a class="item"><i class="icon check"></i>Status</a>
+        <a class="item"><i class="icon shop"></i>Lojas</a>
+        <a class="item active" href="comands.html"><i class="icon terminal"></i>Comandos</a>
+        <a class="item"><i class="icon headphones"></i>Suporte</a>
+    </div>
+
+    <!-- Title -->
+    <div class="ui equal width center aligned padded grid">
+        <div class="row" style="background-color: #141414;color: #FFFFFF;">
+            <div class="column">
+                <br><br><br>
+                <h1>XGen Server</h1>
+                <p class="ui blue label"><i class="icon terminal"></i>Comandos do servidor</p>
+                <br><br><br><br><br>
+            </div>
+        </div>
+    </div>
+    <div class="ui basic segment">
+
+        <!-- Segurança -->
+        <h3 class="ui horizontal divider header"><i class="shield icon"></i> Segurança </h3>
+        <table class="ui inverted blue table">
+            <thead>
+              <tr><th>Comandos</th>
+              <th>Descrição</th>
+              <th>Permissão</th>
+            </tr></thead><tbody>
+              <tr>
+                <td>/register senha senha</td>
+                <td>Permite a você se registrar no servidor.</td>
+                <td>[Visitante]</td>
+              </tr>
+              <tr>
+                <td>/login ou /l</td>
+                <td>Permite a você fazer login no servidor.</td>
+                <td>[Visitante] [Membro]</td>
+              </tr>
+              <tr>
+                <td>/privatechest add nome_do_jogador</td>
+                <td>Dá permissão a um jogador em seus baús e fornalhas.</td>
+                <td>[Membro] [VIP]</td>
+              </tr>
+              <tr>
+                <td>/privatechest remove nome_do_jogador</td>
+                <td>Remove permissão de um jogador em seus baús e fornalhas.</td>
+                <td>[Membro] [VIP]</td>
+              </tr>
+              <tr>
+                <td>/privatechest makepublic</td>
+                <td>Dá permissão a qualquer jogador em seus baús e fornalhas.</td>
+                <td>[Membro] [VIP]</td>
+              </tr>
+            </tbody>
+        </table>
+
+        <!-- Casas e Teleportes -->
+        <h3 class="ui horizontal divider header"><i class="home icon"></i> Casas e Teleportes </h3>
+        <table class="ui inverted blue table">
+            <thead>
+              <tr><th>Comandos</th>
+              <th>Descrição</th>
+              <th>Permissão</th>
+            </tr></thead><tbody>
+              <tr>
+                <td>/sethome nome_da_casa</td>
+                <td>Cria uma home com nome específico. Limite de 3 para [Membros] e 10 para [VIP].</td>
+                <td>[Membro] [VIP]</td>
+              </tr>
+              <tr>
+                <td>/home nome_da_casa</td>
+                <td>Teleporta você para home escolhida.</td>
+                <td>[Membro] [VIP]</td>
+              </tr>
+              <tr>
+                <td>/delhome nome_da_casa</td>
+                <td>Deleta a home escolhida.</td>
+                <td>[Membro] [VIP]</td>
+              </tr>
+              <tr>
+                <td>/tpa nome_do_jogador</td>
+                <td>Envia solicitação de telepote para jogador escolhido.</td>
+                <td>[Membro] [VIP]</td>
+              </tr>
+              <tr>
+                <td>/tpaccept</td>
+                <td>Aceita a solicitação de telepote de outro jogador.</td>
+                <td>[Membro] [VIP]</td>
+              </tr>
+              <tr>
+                <td>/tpdeny</td>
+                <td>Recusa a solicitação de telepote de outro jogador. Você também pode ignorar o pedido por 30 segundos.</td>
+                <td>[Membro] [VIP]</td>
+              </tr>
+              <tr>
+                <td>/warps</td>
+                <td>Mostra a você as warps disponíveis.</td>
+                <td>[VIP]</td>
+              </tr>
+              <tr>
+                <td>/warps nome_da_warp</td>
+                <td>Teleporta você para a warp escolhida.</td>
+                <td>[VIP]</td>
+              </tr>
+            </tbody>
+        </table>
+
+        <!-- Kits e Reparo -->
+        <h3 class="ui horizontal divider header"><i class="cog icon"></i> Kits e Reparo </h3>
+        <table class="ui inverted blue table">
+            <thead>
+              <tr><th>Comandos</th>
+              <th>Descrição</th>
+              <th>Permissão</th>
+            </tr></thead><tbody>
+              <tr>
+                <td>/kit iniciante</td>
+                <td>Dá a você um kit iniciante. Pode ser usado a cada 7 dias.</td>
+                <td>[Membro] [VIP]</td>
+              </tr>
+              <tr>
+                <td>/kit comida</td>
+                <td>Dá a você uma pequena porção de comida. Pode ser usado a cada 1 hora.</td>
+                <td>[Membro] [VIP]</td>
+              </tr>
+              <tr>
+                <td>/kit vipsupremo</td>
+                <td>Dá a você um kit VIP. Pode ser usado a cada 30 dias.</td>
+                <td>[VIP]</td>
+              </tr>
+              <tr>
+                <td>/repair</td>
+                <td>Repara o item selecionado sem custos.</td>
+                <td>[VIP]</td>
+              </tr>
+            </tbody>
+        </table>
+
+        <!-- Financeiro -->
+        <h3 class="ui horizontal divider header"><i class="dollar icon"></i> Financeiro </h3>
+        <table class="ui inverted blue table">
+            <thead>
+              <tr><th>Comandos</th>
+              <th>Descrição</th>
+              <th>Permissão</th>
+            </tr></thead><tbody>
+              <tr>
+                <td>/money</td>
+                <td>Mostra quanto você tem de dinheiro.</td>
+                <td>[VIP]</td>
+              </tr>
+              <tr>
+                <td>/pay nome_do_jogador</td>
+                <td>Dá dinheiro a um jogador.</td>
+                <td>[Membro] [VIP]</td>
+              </tr>
+            </tbody>
+        </table>
+
+        <!-- Outros Comandos -->
+        <h3 class="ui horizontal divider header"><i class="book icon"></i> Outros Comandos </h3>
+        <table class="ui inverted blue table">
+            <thead>
+              <tr><th>Comandos</th>
+              <th>Descrição</th>
+              <th>Permissão</th>
+            </tr></thead><tbody>
+              <tr>
+                <td>/enderchest</td>
+                <td>Abre seu baú do fim.</td>
+                <td>[VIP]</td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="ui equal width center aligned padded grid">
+        <div class="row" style="background-color: #141414;color: #FFFFFF;">
+            <div class="column">
+                <br>
+                <h4 class="ui inverted header centered"><i class="icon globe"></i>TTI Web Design.</h4><div class="ui red label"><i class="icon copyright"></i>Todos os direitos reservados</div>
+                <br><br><br>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/jQuery.js"></script>
+    <script src="Semantic/semantic.js"></script>
+</body>
+</html>
