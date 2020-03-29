@@ -16,20 +16,34 @@
         </div>
         <a class="item active" href="index.html"><i class="icon home"></i>Início</a>
         <a class="item"><i class="icon diamond"></i>Seja VIP<div class="ui olive label"><i class="icon calendar alternate"></i>30d EXTRA</div></a>
-        <a class="item"><i class="icon check"></i>Status e Informações</a>
+        <a class="item" href="status.html"><i class="icon check"></i>Status e Informações</a>
         <a class="item"><i class="icon shop"></i>Lojas</a>
         <a class="item"><i class="icon refresh"></i>Updates</a>
         <a class="item" href="comands.html"><i class="icon terminal"></i>Comandos</a>
         <a class="item"><i class="icon headphones"></i>Suporte</a>
     </div>
     
+    <!-- Modal -->
+    <div class="ui modal">
+        <div class="header">IP Copiado para a área de transferencia!</div>
+        <div class="actions">
+          <div class="ui green approve button">Entendido</div>
+        </div>
+    </div>
+
     <!-- Title -->
     <div class="ui equal width center aligned padded grid">
         <div class="row" style="background-color: #141414;color: #FFFFFF;">
             <div class="column">
                 <br><br><br>
                 <h1>XGen Server</h1>
-                <p class="ui blue label">Minecraft 1.15.2</p>
+                <p class="ui blue label">Minecraft 1.15.2</p><br><br>
+                
+                <div class="ui blue right labeled left icon input">
+                    <i class="blue cube icon"></i>
+                    <input type="text" placeholder="xgen.reis.host">
+                    <a onclick="copyIP()" class="ui blue label left icon"><i class="copy icon"></i>Copiar</a>
+                </div>
                 <br><br><br><br><br>
             </div>
         </div>
@@ -86,5 +100,6 @@
     <!-- Scripts -->
     <script src="js/jQuery.js"></script>
     <script src="Semantic/semantic.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
